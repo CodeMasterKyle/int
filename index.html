@@ -51,7 +51,7 @@
         }
         const data = await response.json();
         document.getElementById('online-status').innerHTML = 
-            `Online: ${data.total}`;
+            `Online: ${data.interlude}`;
     } catch (error) {
         console.error('Ошибка при загрузке статуса сервера:', error);
         document.getElementById('online-status').innerHTML = 'Ошибка при загрузке статуса сервера.';
